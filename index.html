@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Budget Tracker</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1>Personal Budget Tracker</h1>
+        </header>
+
+        <!-- Budget Overview -->
+        <section id="overview" class="card">
+            <h2>Budget Overview</h2>
+            <p>Total Income: <span id="totalIncome">0</span></p>
+            <p>Total Expenses: <span id="totalExpenses">0</span></p>
+            <p>Remaining Budget: <span id="remainingBudget">0</span></p>
+        </section>
+
+        <!-- Add Transaction Form -->
+        <section id="addTransactionForm" class="card">
+            <h2>Add Transaction</h2>
+            <div class="form-group">
+                <input type="text" id="description" placeholder="Description">
+                <input type="number" id="amount" placeholder="Amount">
+                <select id="type">
+                    <option value="income">Income</option>
+                    <option value="expense">Expense</option>
+                </select>
+                <button id="addButton">Add Transaction</button>
+            </div>
+        </section>
+
+        <!-- Filter Options -->
+        <section id="filterOptions" class="card">
+            <h2>Filter Options</h2>
+            <div class="btn-group">
+                <button id="filterIncome" class="btn">Filter Income</button>
+                <button id="filterExpense" class="btn">Filter Expense</button>
+                <button id="filterAll" class="btn">Show All</button>
+            </div>
+        </section>
+
+        <!-- Transaction List -->
+        <section id="transactionList" class="card">
+            <h2>Transactions</h2>
+            <ul id="transactions"></ul>
+        </section>
+    </div>
+
+    <!-- Include JavaScript file -->
+    <script src="script.js"></script>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Personal Budget Tracker. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
